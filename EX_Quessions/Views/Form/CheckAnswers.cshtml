@@ -1,0 +1,44 @@
+﻿@model EX_Quessions.Models.ResultTesting
+
+@{
+    ViewData["Title"] = "Результат тестирования";
+}
+<h1>Результат тестирования</h1>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CountQuessions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CountQuessions)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CountCorrectAnswers)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CountCorrectAnswers)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EllapsedTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EllapsedTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PercentageOfCompletion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PercentageOfCompletion)%
+        </dd>
+    </dl>
+</div>
+<hr />
+
+<div>
+    @Html.ActionLink("Отчет", "Report", "Form", null, new { @class="nav-link" })
+</div>
+
+<div>
+    <a asp-action="Index" class="nav-link">Перезайти</a>
+</div>
