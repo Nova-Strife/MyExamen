@@ -4,26 +4,26 @@
 @using (Html.BeginForm("CheckAnswers", "Form", null, FormMethod.Post, true,
 new { role = "form col-sm-10" }))
 {
-    <h2>Заполните поля</h2>
+    <h2>Заполните поля</h2><hr />
     <div class="form-group">
         <h4>@Model[0].Name</h4>
-        <input type="text" name="CountMaterics" value="@Model[0].Answer" class="form-control col-sm-2" />
+        <input type="text" name="CountMaterics" value="" class="form-control col-sm-2" />
     </div
 > <div class="form-group">
-    <h4>@Model[0].Name</h4>
-    <input type="text" name="CountPlanet" value="@Model[1].Answer" class="form-control col-sm-2" />
+    <h4>@Model[1].Name</h4>
+    <input type="text" name="CountPlanet" value="" class="form-control col-sm-2" />
 </div>
   <div class="form-group">
-      <h4>@Model[0].Name</h4>
-      <input type="text" name="Satellite" value="@Model[2].Answer" class="form-control col-sm-2" />
+      <h4>@Model[2].Name</h4>
+      <input type="text" name="Satellite" value="" class="form-control col-sm-2" />
   </div>
   <div class="form-group">
-      <h4>@Model[0].Name</h4>
-      <input type="text" name="DayProtect" value="@Model[3].Answer" class="form-control col-sm-2" />
+      <h4>@Model[3].Name</h4>
+      <input type="text" name="DayProtect" value="" class="form-control col-sm-2" />
   </div>
   <div class="form-group">
-      <h4>@Model[0].Name</h4>
-      <input type="text" name="LastName" value="@Model[4].Answer" class="form-control col-sm-2" />
+      <h4>@Model[4].Name</h4>
+      <input type="text" name="LastName" value="" class="form-control col-sm-2" />
   </div>
     <input type="text" hidden="hidden" name="TestingTime" value="@DateTime.Now.TimeOfDay" />
     <br />
